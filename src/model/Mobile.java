@@ -78,7 +78,7 @@ public class Mobile implements IMobile {
 	}
 
 	@Override
-	public void setDofightModel(DofightModel dofightModel) {
+	public void setDofightModel(DogfightModel dofightModel) {
 		// TODO Auto-generated method stub
 
 	}

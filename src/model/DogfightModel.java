@@ -4,11 +4,11 @@ package model;
 import java.util.ArrayList;
 import java.util.Observable;
 
-public class DofightModel implements IDofightModel {
+public class DogfightModel implements IDogfightModel {
 	private Sky sky;
 	private ArrayList<IMobile> mobiles;
 	
-	public DofightModel() {
+	public DogfightModel() {
 		// TODO Auto-generated constructor stub
 		this.sky = new Sky(new Dimension(500,500));
 	}

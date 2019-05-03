@@ -1,6 +1,9 @@
 package view;
 
 import java.lang.Runnable;
+import java.util.Observable;
+
+import model.IDogfightModel;
 
 public class DogfightView implements IViewSystem, Runnable{
 
