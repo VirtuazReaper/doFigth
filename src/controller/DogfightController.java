@@ -6,12 +6,12 @@ import model.IDogfightModel;
 import model.Missile;
 import view.IViewSystem;
 
-public class DofightController implements IOrderPerformer {
+public class DogfightController implements IOrderPerformer {
 	private static int TIME_SLEEP = 30;
 	private IViewSystem viewSystem;
 	private IDogfightModel dogfightModel;
 	
-	public DofightController(IDogfightModel dogfightModel) {
+	public DogfightController(IDogfightModel dogfightModel) {
 		// TODO Auto-generated constructor stub
 		this.dogfightModel = dogfightModel;
 		

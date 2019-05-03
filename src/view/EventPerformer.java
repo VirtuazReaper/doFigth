@@ -3,12 +3,13 @@ package view;
 import java.awt.event.KeyEvent;
 
 import controller.IOrderPerformer;
-import controller.Userorder;
+import controller.Order;
+import controller.UserOrder;
 import gameframe.IEventPerformer;
 
 public class EventPerformer implements IEventPerformer{
 	
-	private IOderPerformer orderPerfomer;
+	private IOrderPerformer orderPerfomer;
 	
 	public EventPerformer(IOrderPerformer orderPerformer) {
 		this.orderPerfomer = orderPerformer;
@@ -18,7 +19,7 @@ public class EventPerformer implements IEventPerformer{
 		
 	}
 	
-	private UserOrder keyCodeToUserOrder(int keyCode) {
-		
+	private UserOrder keyCodeToUserOrder(Order keyCode) {
+		return new UserOrder(1, keyCode);
 	}
 }

@@ -14,7 +14,6 @@ public class GraphicsBuilder implements IGraphicsBuilder{
 	private IDogfightModel dogfigthModel;
 	
 	public GraphicsBuilder(IDogfightModel dogfightModel) {
-		this.emptySky = new BufferedImage(0,0,255);
 		this.dogfigthModel = dogfightModel;
 	}
 	
@@ -23,7 +22,7 @@ public class GraphicsBuilder implements IGraphicsBuilder{
 	}
 	
 	private void buildEmptySky() {
-		
+		this.emptySky = new BufferedImage(500,500,1);
 	}
 	
 	private void drawMobile(IMobile mobile, Graphics graphics, ImageObserver observer ) {
