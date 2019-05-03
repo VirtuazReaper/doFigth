@@ -17,7 +17,7 @@ public class Sky implements IArea{
 		return dimension;
 	}
 	public Image getImage() {
-		return null;
+		return this.image;
 	}
 
 }
