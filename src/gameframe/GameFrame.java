@@ -26,6 +26,7 @@ public class GameFrame extends JFrame implements KeyListener{
 		this.setContentPane(gamePanel);
 		this.setSize(800,800); 
 		this.setLocationRelativeTo(null);  	
+		observable.addObserver(gamePanel);
 	}
 	public void keyPressed(KeyEvent keyEvent) {
 		eventPerformer.eventPerform(keyEvent);

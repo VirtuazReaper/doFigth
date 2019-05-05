@@ -15,11 +15,9 @@ public class GamePanel extends JPanel implements Observer{
 	 */
 	private static final long serialVersionUID = 1L;
 	private IGraphicsBuilder graphicsBuilder;
-	private DogfightModel dogfightModel;
 	
 	public GamePanel (IGraphicsBuilder graphicBuilder) {
 		this.graphicsBuilder = graphicBuilder;
-		dogfightModel.addObserver(this);
 	}
 	
 	
@@ -28,7 +26,7 @@ public class GamePanel extends JPanel implements Observer{
 	}
 	
 	public void paintComponent(Graphics graphic) {
-		
+		this.graphicsBuilder.applyModelToGraphic(graphic, this);
 	}
 
 }

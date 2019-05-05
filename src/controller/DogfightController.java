@@ -31,7 +31,7 @@ public class DogfightController implements IOrderPerformer {
 	}
 	
 	@Override
-	public void orderPerform(UserOrder userOrder) {
+	public void orderPerform(IUserOrder userOrder) {
 		
 	}
 
